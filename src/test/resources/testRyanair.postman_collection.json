@@ -1,0 +1,148 @@
+{
+	"info": {
+		"name": "testRyanair",
+		"_postman_id": "36ffbd71-33f9-2f17-9cc6-cea2c345779e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InterConn. Single Month",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/ryanair-test/api/v1/interconnections?departure=DUB&arrival=WRO&departureDateTime=2018-08-01T07:00&arrivalDateTime=2018-08-25T21:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ryanair-test",
+						"api",
+						"v1",
+						"interconnections"
+					],
+					"query": [
+						{
+							"key": "departure",
+							"value": "DUB",
+							"equals": true
+						},
+						{
+							"key": "arrival",
+							"value": "WRO",
+							"equals": true
+						},
+						{
+							"key": "departureDateTime",
+							"value": "2018-08-01T07:00",
+							"equals": true
+						},
+						{
+							"key": "arrivalDateTime",
+							"value": "2018-08-25T21:00",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "InterConn. Multiple Months",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/ryanair-test/api/v1/interconnections?departure=DUB&arrival=WRO&departureDateTime=2018-08-25T07:00&arrivalDateTime=2018-09-25T21:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ryanair-test",
+						"api",
+						"v1",
+						"interconnections"
+					],
+					"query": [
+						{
+							"key": "departure",
+							"value": "DUB",
+							"equals": true
+						},
+						{
+							"key": "arrival",
+							"value": "WRO",
+							"equals": true
+						},
+						{
+							"key": "departureDateTime",
+							"value": "2018-08-25T07:00",
+							"equals": true
+						},
+						{
+							"key": "arrivalDateTime",
+							"value": "2018-09-25T21:00",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "InterConn. Multiple Years",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/ryanair-test/api/v1/interconnections?departure=DUB&arrival=WRO&departureDateTime=2018-12-25T07:00&arrivalDateTime=2019-01-25T21:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ryanair-test",
+						"api",
+						"v1",
+						"interconnections"
+					],
+					"query": [
+						{
+							"key": "departure",
+							"value": "DUB",
+							"equals": true
+						},
+						{
+							"key": "arrival",
+							"value": "WRO",
+							"equals": true
+						},
+						{
+							"key": "departureDateTime",
+							"value": "2018-12-25T07:00",
+							"equals": true
+						},
+						{
+							"key": "arrivalDateTime",
+							"value": "2019-01-25T21:00",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
